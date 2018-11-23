@@ -43,7 +43,7 @@ Providers
 Alias
 
 ```base                
-    'Activity' => \Kishor\Activity\Facades\Activity::class,
+    'Activity' => Kishor\Activity\Facades\Activity::class,
 ```
 
 The package will automatically register itself.
@@ -51,6 +51,8 @@ The package will automatically register itself.
 You can publish the migration with:
 ```bash
     php artisan vendor:publish
+    
+    composer dump-autoload
 
 ```
 

@@ -37,5 +37,5 @@ return [
      * used by the Activity model shipped with this package.
      */
 
-    'table_name' => env('DB_TABLE', 'activity_log'),
+    'table_name' => env('ACTIVITY_LOG_DB_TABLE', 'activity_log'),
 ];
