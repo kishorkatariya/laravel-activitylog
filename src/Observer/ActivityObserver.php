@@ -39,8 +39,8 @@ class ActivityObserver extends BaseController
             if ($logStatus == true) {
                 $referenceId = $model->getKey();
                 $referenceLogType = $model->getTable();
-                $oldDiff = array_diff($model->getOriginal(), $model->getAttributes());
-                $newDiff = array_diff($model->getAttributes(), $model->getOriginal());
+                $oldDiff = array_diff_assoc($model->getOriginal(), $model->getAttributes());
+                $newDiff = array_diff_assoc($model->getAttributes(), $model->getOriginal());
 
                 if (method_exists($model, 'getActivityLogData')) {
                     if (array_key_exists("update", $model->getActivityLogData())) {
