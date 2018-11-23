@@ -14,9 +14,9 @@ You can install the package via composer:
 ``` bash
 "repository":[
 	{
-		type:"vcs",
-		url:"https://github.com/kishorkatariya/laravel-activitylog.git"
-	}
+        "type": "vcs",
+        "url": "https://github.com/kishorkatariya/laravel-activitylog.git"
+    }
 ]
 "require": {
     "kishor/activity": "dev/master#1.*",
